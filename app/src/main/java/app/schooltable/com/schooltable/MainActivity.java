@@ -31,8 +31,12 @@ public class MainActivity extends Activity {
 
     private Button button1_1;
     private String Demo;
-    private int week=1;
+    private int day=0;
+    private int classNext=0;
+    private int Cweek=0;
     private String httpurl="Http://120.27.53.146:5000/api/schedule";
+    private String [][][]TB_class=new String[20][5][5];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,40 +65,56 @@ public class MainActivity extends Activity {
                             table_date.put("Thu", schedule.getJSONObject("Thu"));
                             table_date.put("Fri", schedule.getJSONObject("Fri"));
                             Iterator D_date=table_date.keySet().iterator();
+                            for (int a=0;a<20;a++)
+                                for (int b=0;b<5;b++)
+                                    for(int c=0;c<5;c++)
+                                        TB_class[a][b][c]="no";
+                            while (D_date.hasNext()) {
 
-                                  while (D_date.hasNext()) {
+                                String d_key = (String) D_date.next();
+                                Map<String, JSONArray> table_class = new LinkedHashMap<>();//每天的课
+                                table_class.put("1-2", table_date.get(d_key).getJSONArray("1-2"));
+                                table_class.put("3-4", table_date.get(d_key).getJSONArray("3-4"));
+                                table_class.put("5-6", table_date.get(d_key).getJSONArray("5-6"));
+                                table_class.put("7-8", table_date.get(d_key).getJSONArray("7-8"));
+                                table_class.put("9-10", table_date.get(d_key).getJSONArray("9-10"));
+                                Iterator C_class = table_class.keySet().iterator();
+                               /* while (C_class.hasNext()) {
+                                    String c_key = (String) C_class.next();
+                                    String Test=table_class.get(c_key).getString(0);
+                                    if (Test.length()>5){//这周这天这节有课
+                                        JSONTokener json_class = new JSONTokener(Test);
+                                        JSONObject myclass = (JSONObject) json_class.nextValue();
+                                        myclass.getString("class_name");
+                                        String infos=myclass.getString("weeks");//转化成数组
+                                        infos = infos.replaceAll("[\\[\\]]", "");
+                                        String[] info=infos.split(",");
+                                        int[] w=new int[info.length];
+                                        for (int i=0;i<info.length;i++){
+                                            w[i]=Integer.parseInt(info[i]);
 
-                                    String d_key = (String) D_date.next();
-                                    Map<String, JSONArray> table_class = new LinkedHashMap<>();//每天的课
-                                      table_class.put("1-2", table_date.get(d_key).getJSONArray("1-2"));
-                                      table_class.put("3-4", table_date.get(d_key).getJSONArray("3-4"));
-                                      table_class.put("5-6", table_date.get(d_key).getJSONArray("5-6"));
-                                      table_class.put("7-8", table_date.get(d_key).getJSONArray("7-8"));
-                                      table_class.put("9-10", table_date.get(d_key).getJSONArray("9-10"));
-                                      Iterator C_class = table_class.keySet().iterator();
-                                    while (C_class.hasNext()) {
-                                        String c_key = (String) C_class.next();
+                                        }
+                                        for (int i=0;i<info.length;i++){
+                                            for(Cweek=0;Cweek<20;Cweek++){
+                                                if (w[i] == Cweek + 1) {
 
-                                           String class_name = table_class.get(c_key).getString(0);
+                                                    TB_class[Cweek][day][classNext] = myclass.getString("class_name");
 
-                                            if (!class_name.equals("null")) {
-                                                JSONTokener json_class = new JSONTokener(class_name);
-                                                JSONObject myclass = (JSONObject) json_class.nextValue();
-                                                    String wh_week = myclass.getString("weeks");
-                                                    String infos=wh_week;
-                                                    infos=infos.replaceAll("[\\[\\]]", "");
-                                                    String[] info=infos.split(",");
-                                                int[] w=new int[info.length];
-                                                for (int i=0;i<info.length;i++){
-                                                    w[i]=Integer.parseInt(info[i]);
                                                 }
-                                                        Log.d("lsy", "周几=" + d_key + " 第几堂课=" + c_key + " 课名="
-                                                                + myclass.getString("class_name")
-                                                                + " 周数=" +info[0]);
                                             }
-                                   }
+                                        }
 
-                               }
+
+                                    }
+                                    if(++classNext>4){
+                                        classNext=0;
+                                    }
+
+                                }*/
+                                ++day;
+
+                            }
+                             Log.d("LSY",TB_class[1][4][1]);
 
                         } catch (JSONException e) {
                             e.printStackTrace();
