@@ -54,7 +54,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         choose_button= (Button) findViewById(R.id.choose_button);
-        getWebTable();
         bindButton();
         choose_button.setOnClickListener(this);
 
@@ -150,6 +149,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         switch (v.getId()){
             case  R.id.choose_button:
                chooseweek=Integer.valueOf(edit.getText().toString());
+                getWebTable();
         }
 
     }
@@ -225,6 +225,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+
             return new String[0][][];
         }
         protected void onPreExecute(){
@@ -244,11 +245,16 @@ public class MainActivity extends Activity implements View.OnClickListener{
                     for (int j = 0; j < 5; j++) {
                         button[i][j].setText(TB_class[chooseweek][i][j]);
                         Log.d("LSY", String.valueOf(chooseweek));
+
                     }
 
                 }
 
             }
+
+            day=0;
+            Cweek=0;
+            classNext=0;
         }
     }
 
