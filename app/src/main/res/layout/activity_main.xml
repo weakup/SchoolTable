@@ -104,21 +104,23 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#eeaaec"
-                    android:text="1-2" />
+                    android:text="1-2"/>
                 <Button
                     android:id="@+id/button1_1"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#61c861"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button2_1"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF7D40"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button3_1"
@@ -126,7 +128,8 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#00C78C"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button4_1"
@@ -134,14 +137,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF8000"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button5_1"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#edcfb1"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
             </TableRow>
         </RelativeLayout>
         <RelativeLayout
@@ -169,14 +174,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#61c861"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button2_2"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF7D40"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button3_2"
@@ -184,7 +191,8 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#00C78C"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button4_2"
@@ -192,14 +200,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF8000"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button5_2"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#edcfb1"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
             </TableRow>
         </RelativeLayout>
         <RelativeLayout
@@ -226,14 +236,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#61c861"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button2_3"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF7D40"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button3_3"
@@ -241,7 +253,8 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#00C78C"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button4_3"
@@ -249,14 +262,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF8000"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button5_3"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#edcfb1"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
             </TableRow>
         </RelativeLayout>
         <RelativeLayout
@@ -283,14 +298,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#61c861"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button2_4"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF7D40"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button3_4"
@@ -298,7 +315,8 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#00C78C"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button4_4"
@@ -306,14 +324,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF8000"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button5_4"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#edcfb1"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
             </TableRow>
         </RelativeLayout>
         <RelativeLayout
@@ -340,14 +360,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#61c861"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button2_5"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF7D40"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button3_5"
@@ -355,7 +377,8 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#00C78C"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button4_5"
@@ -363,14 +386,16 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#FF8000"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
                 <Button
                     android:id="@+id/button5_5"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#edcfb1"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="14dp"/>
             </TableRow>
         </RelativeLayout>
 
